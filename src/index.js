@@ -6,7 +6,7 @@ import Index from "./pages/index";
 import * as serviceWorker from "./serviceWorker";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD9OIBQUJIXJjHfOkTb4LAnt-THgzIqve4",
+  apiKey: process.env.FIREBASE_APIKEY,
   authDomain: "hanbit-mobile.firebaseapp.com",
   databaseURL: "https://hanbit-mobile.firebaseio.com",
   projectId: "hanbit-mobile",
