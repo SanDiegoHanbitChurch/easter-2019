@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "firebase": "^5.9.2",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

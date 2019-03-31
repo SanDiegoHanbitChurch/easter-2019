@@ -26,9 +26,16 @@ class Index extends React.Component {
   };
 
   onClick = () => {
-    this.setState({
-      prayerRequest: ""
-    });
+    const { onSubmit } = this.props;
+    const { prayerRequest, initial } = this.state;
+
+    if (prayerRequest !== "" && initial !== "") {
+      onSubmit({ prayerRequest, initial });
+
+      this.setState({
+        prayerRequest: ""
+      });
+    }
   };
 
   render() {
